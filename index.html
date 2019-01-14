@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Food Pantry</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/apps.js"></script>
+  </head>
+
+  <body>
+
+    <header>
+    <h1>Food Pantry - No More Wasting Food</h1>
+    <div id="line"></div>
+    </header>
+
+    <!-- sliding buttons -->
+    <!-- <div class="main">
+            <div class="group">
+                <a href="#" class="two">
+                    <span>Time to eat!</span>
+                    <div class="bg"></div>
+
+                <a href="#" class="one">Fresh Food!</a>
+            </div>
+        </div> -->
+
+    <!-- entry form -->
+    <form id="new-food-items">
+      <div id="form-wrapper">
+
+        <!-- purchase date -->
+        <div class="form-item">
+         <label for ="date" class="primary">Purchase Date:</label>
+          <input type="date" id="purchase" required>
+        </div>
+
+        <!-- item purchased -->
+        <div class="form-item">
+          <label for="food" class="primary">Food Purchased:</label>
+          <input type="text" id="foodPurchased" required/>
+        </div>
+
+        <!-- quantity purchased -->
+        <div class="form-item">
+          <label for="quantity" class="primary">Quantity:</label>
+          <input type="text" id="quantity" required/>
+        </div>
+
+        <!-- use by date -->
+        <div class="form-item">
+          <label for="use by date" class="primary">Use by date:</label>
+          <input type="date" id="useByDate" required>
+        </div>
+
+
+
+        <!-- select option -->
+        <div class="form-item">
+          <label for="category" class="primary">Storage:</label>
+          <select id="category">
+            <option value="" disabled selected></option>
+            <option value="Fridge">Fridge</option>
+            <option value="Freezer">Freezer</option>
+            <option value="Pantry">Pantry</option
+          </select>
+        </div>
+
+        <input type="submit"  value="save"/>
+
+    </form>
+
+    <button id="delete-all">Delete All</button>
+
+    <h2>Food in your House - ready to cook!</h2>
+    <div id="food-supplies"></div>
+
+        <ul>
+
+        </ul>
+
+
+  </body>
+
+
+
+</html>
